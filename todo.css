@@ -1,0 +1,159 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.container {
+    width: 390px;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+.task-input {
+    display: flex;
+    border: 1px solid #cfcfcf;
+    width: 350px;
+    padding: 0px;
+}
+
+.task-input:hover{
+    border: 2px solid blue;
+}
+
+.add-button {
+    width: 40px;
+    height: 40px;
+    background-color:  #13E328;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0;
+
+}
+
+.add-button:hover{
+    border: 2px solid blue;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+
+
+.tab {
+    width: 124px;
+    border: 1px solid #cfcfcf;
+    line-height: 30px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 8px;
+    line-height: 30px;
+    color: #8f8f8f;
+}
+
+.tab:hover{
+    border: 2px solid blue;
+    background-color: #8f8f8f;
+    color: white;
+}
+
+.tab:last-child {
+    margin-right: 0;
+}
+
+.tab .active{
+    background-color: #ccc;
+    color: black;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #fff;
+}
+
+.task-item.completed {
+    background-color: transparent;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: black;
+}
+
+.task-item .actions {
+    display: flex;
+}
+
+.action-button {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.complete-button {
+    border: 2px solid #cfcfcf;
+    color: #ccc;
+    order: -1;
+    background-color:white;
+}
+
+.complete-button:hover{
+    border: 2px solid blue;
+}
+
+.edit-button {
+    background-color: #0085ff;
+    color: #fff;
+}
+
+.edit-button:hover{
+    border: 2px solid blue;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.delete-button:hover{
+    border: 2px solid blue;
+}
+
+.notification {
+    margin-top: 10px;
+    color: green;
+}
